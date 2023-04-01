@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.element{
+    align-items:center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.dropdown {
+    color: black;
+}
