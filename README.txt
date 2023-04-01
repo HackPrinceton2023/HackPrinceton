@@ -7,3 +7,10 @@ Steps to run the Flask app:
 4) Then, run python index.py to run the Flask App
 
 For step 2 above, here are some additional instructions if you don't have virtualenv installed: https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
+
+Steps to run the React app:
+1) Navigate to the frontend file, `cd frontend/`
+2) `npm install`
+2) `npm install vite`
+3) `npm run dev`
+
