@@ -130,6 +130,7 @@ const WelcomePage = () => {
     console.log(languages[e.target.value]);
     setSelectedLanguageID(languages[e.target.value]);
   };
+  
 
   return (
     <>
@@ -156,7 +157,7 @@ const WelcomePage = () => {
                         className={styles.dropdown}
                     />
                 </div>
-                <button><Link to={`${redirect}?prop1=${selectedLanguageID}`} style={{ color: '#FFFFFF' }}>Next</Link></button>
+                <button><Link to={`${redirect}?prop1=${selectedLanguageID}&prop2=${selectedLanguage}`} style={{ color: '#FFFFFF' }}>Next</Link></button>
             </div>
         )}
     </div>
