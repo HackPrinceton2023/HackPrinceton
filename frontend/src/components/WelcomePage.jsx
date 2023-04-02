@@ -121,7 +121,7 @@ const WelcomePage = () => {
     if (option.value == 'Interactive Learning'){
         setRedirect('/interactive');
     }else{
-        setRedirect('/regular');
+        setRedirect('/regularPage');
     }
   }
 
