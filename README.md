@@ -46,3 +46,5 @@ Sentence Similarity Model from HuggingFace - https://huggingface.co/hiiamsid/sen
 OpenAI ChatGPT API - https://platform.openai.com/docs/guides/chat
 
 OpenCV - https://github.com/opencv/opencv/tree/4.7.0
+
+Tesseract - https://github.com/tesseract-ocr/tesseract
