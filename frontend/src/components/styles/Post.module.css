@@ -1,0 +1,36 @@
+.feedPostContainer {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .feedPostHeader {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .profilePic {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .username {
+    font-weight: bold;
+  }
+  
+  .feedPostImageContainer {
+    width: 100%;
+  }
+  
+  .feedPostImage {
+    width: 100%;
+  }
+  
+  .feedPostCaption {
+    padding: 10px;
+  }
+  

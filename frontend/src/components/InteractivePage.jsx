@@ -56,7 +56,7 @@ const InteractivePage = () => {
     try {
       const response = await fetch('http://127.0.0.1:5000/api/extract-translate', {
         method: 'POST',
-        body: JSON.stringify({ image }),
+        body: JSON.stringify({ image, lang }),
         headers: {
           'Content-Type': 'application/json'
         }
@@ -142,12 +142,13 @@ const InteractivePage = () => {
 
   return (
     <div>
+      <h2 style={{fontFamily:"Inter, system-ui, Avenir, Helvetica, Arial, sans-serif"}}>Look around you! Take a picture of ONE item :{")"}</h2>
+      <h3 style={{fontFamily:"Inter, system-ui, Avenir, Helvetica, Arial, sans-serif"}}>For best results, include objects only</h3>
       {capture ? (
         <div>
             <img src={capture} alt="captured image" />
             <div >
-              {translatedQuestion?<h1>{translatedQuestion.substr(1)}</h1>:null}
-              <button onClick={handleShowEnglishQ}>English Translation</button>
+              {translatedQuestion?<div style={{flexDirection:"column"}}><h1>{translatedQuestion.substr(1)}</h1><button onClick={handleShowEnglishQ}>English Translation</button></div>:null}
               {showEnglish?<h1>{question.substr(3)}</h1>:null}
             </div>
             <p>Select an Option:</p>
@@ -168,4 +169,11 @@ const InteractivePage = () => {
   );
 };
 
-export default InteractivePage;
+export default function WrappedInteractivePage() {
+  const navbarHeight = 110; // set this to the height of your navbar
+  return (
+    <div style={{ marginTop: `${navbarHeight}px` }}>
+      <InteractivePage />
+    </div>
+  );
+}

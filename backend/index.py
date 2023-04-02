@@ -290,13 +290,19 @@ def qaGenerator():
     print(data)
     processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
     model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
-    data['imageURL'] = data['imageURL'][data['imageURL'].find(',')+1:]
-    img_data = base64.b64decode(data['imageURL'])
-    # convert binary data into numpy array
-    nparr = np.frombuffer(img_data, np.uint8)
-    # img_url = data['imageURL'] #ToDO Replace with user Image 
+    
+    if data['imageURL'].startswith('data:image/'):
+        # image data is already in base64 format
+        data['imageURL'] = data['imageURL'][data['imageURL'].find(',')+1:]
+        img_data = base64.b64decode(data['imageURL'])
+        nparr = np.frombuffer(img_data, np.uint8)
+        img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+    else:
+        # image data is a regular file path
+        temp = '..{}'.format(data['imageURL'].split("HackPrinceton")[1])
+        img = Image.open(temp).convert('RGB')
 
-    img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+    # convert binary data into numpy array
 
     # conditional image captioning
     # text = "a photography of"
