@@ -42,6 +42,16 @@ SalesForce BLIP Image Captioning Model Citation from HuggingFace -https://huggin
 
 
 Sentence Similarity Model from HuggingFace - https://huggingface.co/hiiamsid/sentence_similarity_spanish_es
+@inproceedings{CaneteCFP2020,
+  title={Spanish Pre-Trained BERT Model and Evaluation Data},
+  author={Cañete, José and Chaperon, Gabriel and Fuentes, Rodrigo and Ho, Jou-Hui and Kang, Hojin and Pérez, Jorge},
+  booktitle={PML4DC at ICLR 2020},
+  year={2020}
+}
+
+“Hiiamsid/sentence_similarity_spanish_es.” HuggingFace, https://huggingface.co/hiiamsid/sentence_similarity_spanish_es. 
+
+
 
 OpenAI ChatGPT API - https://platform.openai.com/docs/guides/chat
 
