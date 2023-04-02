@@ -14,3 +14,35 @@ Steps to run the React app:
 2) `npm install vite`
 3) `npm run dev` to run the frontend  
 
+
+
+Citations:
+For this Python Flask app, we mainly utilized Python, HTML/CSS, Javascript (React). We specifically used various different  Python pretrained models from open source HuggingFace website. Please find below the citations for the pretrained models we used from HuggingFace and OpenAI. Additionally, we also worked with libraries like OpenCV (https://github.com/opencv/opencv/tree/4.7.0), pytesseract, langdetect, and googletrans.
+
+
+SalesForce BLIP Image Captioning Model Citation from HuggingFace -https://huggingface.co/Salesforce/blip-image-captioning-base
+
+@misc{https://doi.org/10.48550/arxiv.2201.12086,
+  doi = {10.48550/ARXIV.2201.12086},
+  
+  url = {https://arxiv.org/abs/2201.12086},
+  
+  author = {Li, Junnan and Li, Dongxu and Xiong, Caiming and Hoi, Steven},
+  
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  
+  title = {BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation},
+  
+  publisher = {arXiv},
+  
+  year = {2022},
+  
+  copyright = {Creative Commons Attribution 4.0 International}
+}
+
+
+Sentence Similarity Model from HuggingFace - https://huggingface.co/hiiamsid/sentence_similarity_spanish_es
+
+OpenAI ChatGPT API - https://platform.openai.com/docs/guides/chat
+
+OpenCV - https://github.com/opencv/opencv/tree/4.7.0
