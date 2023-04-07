@@ -1,4 +1,5 @@
 ReadMe for HackPrinceton 2023 project repository
+
 Generate an GPT-3 API from https://platform.openai.com/account/api-keys
 replace 3rd line in path *HackPrinceton/backend/gpt3/gpt3.py/* with your API
 
