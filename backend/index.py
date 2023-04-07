@@ -320,7 +320,7 @@ def qaGenerator():
     print(info)
     text = "A kindergardener is learning to identify objects. What is 1 simple question to ask about an image with" + str(info)+ "The question and answer should be in a single string split by --"
 
-    openai.api_key = "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"
+    openai.api_key = "Input your own key"
 
     response = openai.Completion.create(
         engine = "text-davinci-003",
